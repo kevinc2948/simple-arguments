@@ -28,7 +28,7 @@
       "double",
       { "avoidEscape": true, "allowTemplateLiterals": true }
     ],
-    //"unicorn/filename-case": ["error", { "cases": { "camelCase": true } }],
+    "unicorn/filename-case": ["error", { "cases": { "camelCase": true } }],
     "sonarjs/no-duplicate-string": "off",
     "prettier/prettier": "warn",
     "simple-import-sort/imports": "error",
