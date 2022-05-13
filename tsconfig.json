@@ -16,7 +16,7 @@
     "noUnusedParameters": true,
     "strict": true,
     // Modules
-    "module": "ES2022",
+    "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -41,6 +41,6 @@
     // Interop Constraints
     "forceConsistentCasingInFileNames": true,
     //Language and Environment
-    "target": "es2022"
+    "target": "ESNext"
   }
 }
