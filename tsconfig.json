@@ -20,12 +20,12 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "rootDir": "./src",
+    "rootDir": "src",
     // Emit
-    "declaration": false,
-    //"declarationDir": "./lib/types",
+    "declaration": true,
+    "declarationDir": "lib/types",
     "declarationMap": false,
-    "outDir": "./lib/mjs",
+    "outDir": "lib/mjs",
     "removeComments": true,
     "sourceMap": false,
     // Javascript support
@@ -43,5 +43,5 @@
     //Language and Environment
     "target": "ESNext"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["src"]
 }

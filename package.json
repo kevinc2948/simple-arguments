@@ -1,25 +1,24 @@
 {
   "name": "simple-arguments",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Arguments parser",
   "type": "module",
   "main": "cjs/index.js",
   "module":"mjs/index.js",
-  "types":"index.d.ts",
+  "types":"types/index.d.ts",
   "exports":{
-    ".":{"import":"./mjs/index.js","require":"./cjs/index.js","types":"./index.d.ts"}
+    ".":{"import":"./mjs/index.js","require":"./cjs/index.js","types":"./types/index.d.ts"}
   },
 
   "scripts": {
     "tsc": "tsc",
-    "build-type":"tsc ./src/index.ts --declaration --emitDeclarationOnly --downlevelIteration --outDir ./lib",
     "copy-package-json":"cp package.json ./lib",
 
     "tsc-cjs": "tsc --project ./tsconfig-cjs.json",
     "cjs-package-json":"echo '{\"type\": \"commonjs\"}'>./lib/cjs/package.json",
 
     "build-cjs":"npm run tsc-cjs && npm run cjs-package-json",
-    "build": "npm run tsc  && npm run build-type && npm run copy-package-json && npm run build-cjs",
+    "build": "npm run tsc && npm run copy-package-json && npm run build-cjs",
 
     "prepublish-script": "npm run build",
     "publish-script":" npm publish ./lib --access public",
